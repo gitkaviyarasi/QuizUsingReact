@@ -35,7 +35,7 @@ describe("Quiz App - End-to-End Test", () => {
           seenQuestions.push(currentQuestion);
           
           // Answer and move to next question
-          cy.get('button.btn-primary').first().click(); // Update selector for answer buttons
+          cy.get('button.btn-primary').first().click(); 
           
           // Check next question
           validateQuestionUniqueness(questionIndex + 1);
@@ -83,8 +83,8 @@ describe("Quiz App - End-to-End Test", () => {
         const questions = intercept.response.body;
         cy.wrap(questions).as('questions');
       });
-      cy.get('button').contains('2').click(); // Click the correct answer
-      cy.get('button').contains('1').click(); // Click the correct answer
+      cy.get('button').contains('2').click(); // Click the incorrect answer
+      cy.get('button').contains('1').click(); // Click the incorrect answer
       cy.get('.alert-success').should('contain', '0/2'); // Check score
     });
   });
