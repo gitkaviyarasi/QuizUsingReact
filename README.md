@@ -34,8 +34,7 @@ Component tests use cy.mount(), while E2E tests use cy.visit('http://localhost:3
 5. then run the code by building using the `npm run build` and `npm run start:dev`  `npm run test`
    
 ## Usage
-Run `npm run test` and navigate to the prompted URL to see your app in Cypress. 
-
+Run `npm run cypress` and navigate to the Cypress and choose a browser and select the test type, then on the next page click the test file name and the test will ne run and the results will be displayed. 
 
 ## Demo
 Click the below link for a demo of working application.
@@ -43,13 +42,12 @@ Click the below link for a demo of working application.
 
 ## ScreenShots
 The following image demonstrates the tests.
-
-
+![Cypress home page](./client/src/assets/cypresshomepage.png)
+![Component Testing](./client/src/assets/component%20testing%20.png)
+![e2e testing](./client/src/assets/e2e%20testing%20.png)
 
 ## License
 MIT
-
-
 
 ## Questions
 If you have any questions about this project, feel free to reach out:
